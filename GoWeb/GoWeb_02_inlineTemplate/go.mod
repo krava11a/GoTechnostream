@@ -1,0 +1,1 @@
+module "GoWeb_02_inlineTemplate"

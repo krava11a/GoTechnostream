@@ -1,0 +1,11 @@
+mode: set
+GoTest_02_http/handlers/index.go:9.81,13.16 2 0
+GoTest_02_http/handlers/index.go:20.2,20.28 1 0
+GoTest_02_http/handlers/index.go:13.16,17.3 3 0
+GoTest_02_http/handlers/todos.go:11.81,16.24 3 1
+GoTest_02_http/handlers/todos.go:18.22,23.28 4 1
+GoTest_02_http/handlers/todos.go:25.23,30.17 4 0
+GoTest_02_http/handlers/todos.go:35.3,35.36 1 0
+GoTest_02_http/handlers/todos.go:36.22,39.32 3 0
+GoTest_02_http/handlers/todos.go:41.10,42.50 1 0
+GoTest_02_http/handlers/todos.go:30.17,34.4 3 0
