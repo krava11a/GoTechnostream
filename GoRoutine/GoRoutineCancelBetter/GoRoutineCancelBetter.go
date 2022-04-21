@@ -31,12 +31,16 @@ func main() {
 	wg.Add(1)
 	res1 := boring(&wg,die)
 	res2 := boring(&wg,die)
+	res3 := boring(&wg,die)
 
 	for i := 0; i < 5; i++ {
-		fmt.Printf("You say: %q \n", <-res1)
-		fmt.Printf("You say: %q \n", <-res2)
+		fmt.Printf("You say  1 : %q \n", <-res1)
+		fmt.Printf("You say  2 : %q \n", <-res2)
+		fmt.Printf("You say  3 : %q \n", <-res3)
 	}
 	die <- true
+	fmt.Println("GoodBye")
 	wg.Wait()
+
 
 }

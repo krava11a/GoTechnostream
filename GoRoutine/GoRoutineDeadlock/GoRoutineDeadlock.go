@@ -10,6 +10,14 @@ type Ball struct {
 }
 
 func main() {
+	var n = -99
+	var m = make(map[string]int,1)
+	m["1"]=n
+	m["2"]=n
+	m["3"]=123
+	println(m)
+	fmt.Println(m)
+	return
 	//channel for players interconnection
 	table := make(chan *Ball)
 	// starting two players
@@ -22,11 +30,12 @@ func main() {
 }
 
 func player(name string, tab chan *Ball) {
+
 	for true {
 		ball := <-tab
 		ball.hits++
-		fmt.Println(name,ball.hits)
-		time.Sleep(100*time.Millisecond)
+		fmt.Println(name, ball.hits)
+		time.Sleep(100 * time.Millisecond)
 
 		tab <- ball
 	}
